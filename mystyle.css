@@ -66,13 +66,14 @@
 }
 
 .content1 {
-  width: calc(100% - 70%);
+  width: calc(100% - 80%);
   /* border: 1px solid; */
   float: left;
 }
 
 .content2 {
-  width: calc(100% - 30%);
+  width: calc(100% - 20.3%);
   /* border: 1px solid; */
   float: right;
 }
+
