@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div id="test">
             <section class="content1">
                 content 영역<br/>
                 Test
@@ -27,5 +27,10 @@
                 content 영역<br/>
             </section>
         </div>
+
+        <script>
+            test.attachShadow({mode: 'open'});
+            test.shadowRoot.innerHTML = `<h1>Shadow Dom</h1>`;
+        </script>
     </body>
 </html>
