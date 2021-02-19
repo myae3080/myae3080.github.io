@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="mystyle.css">
+        <script type="text/javascript" src="script1.js"></script>
     </head>
 
     <body>
@@ -18,7 +19,7 @@
                 </div>
             </div>
         </div>
-        <div id="test">
+        <div id="elem">
             <section class="content1">
                 content 영역<br/>
                 Test
@@ -27,10 +28,11 @@
                 content 영역<br/>
             </section>
         </div>
+        
 
-        <script>
-            test.attachShadow({mode: 'open'});
-            test.shadowRoot.innerHTML = `<h1>Shadow Dom</h1>`;
-        </script>
+        <!-- <script type="text/javascript">
+            elem.attachShadow({mode: 'open'});
+            elem.shadowRoot.innerHTML = `<h1>Shadow Dom</h1>`;
+        </script> -->
     </body>
 </html>
