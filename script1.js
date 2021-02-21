@@ -19,6 +19,9 @@ window.onload = () => {
 
 checkShadowDomStatus = () => {
     console.log(document.getElementById('elem').shadowRoot);
+
+    console.log(document.querySelectorAll('h1').length);
+    console.log(document.getElementById('elem').shadowRoot.querySelectorAll('h1').length);
 }
 
 createClosedShadowDom = () => {
@@ -29,4 +32,9 @@ createClosedShadowDom = () => {
 
     console.log(sr);
     console.log(sr.innerHTML);
+}
+
+changeShadowDomInnerHtml = () => {
+    document.getElementById('elem').shadowRoot.innerHTML = `<h1>Changed Shadow Dom</h1>
+    <style>h1{background-color: yellow;}</style>`
 }
